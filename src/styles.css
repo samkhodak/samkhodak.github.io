@@ -1,0 +1,155 @@
+:root {
+    --fs-standard: 1.3rem;
+    --fs-title: 3rem;
+    --clr-back: #ECEBF3;
+    --clr-card: #A0BAA3;
+    --clr-card-alt: #31493C;
+    --clr-back-alt: #D8E4FF;
+    --clr-accent: #3083DC;
+    --clr-main-text: black;
+    --clr-hover-text: white;
+    /*https://coolors.co/d8e4ff-3083dc-a0baa3-31493c-ecebf3*/
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+body {
+    background-color: var(--clr-back);
+    font-weight: 300;
+}
+
+
+
+
+/* NAV STYLES */
+.nav {
+    background-color: var(--clr-back);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    padding: 0 1.5rem;
+    width: 100%;
+    box-shadow: 0 4px 4px -4px rgba(0,0,0,.2);  /*The rgba value is RGB but with an opacity value.*/
+}
+
+.top-row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo {
+    text-decoration: none;
+    font-family: 'Bodoni Moda', serif;
+    font-size: 3rem;
+    padding: 0;
+}
+
+.logo:visited {
+    color: var(--clr-main-text);
+}
+
+.hamburger {
+    background-color: var(--clr-back);
+    border: none;
+    width: 40px;
+    height: 40px;
+    margin-top: 1rem;
+}
+
+.hamburger:hover {
+    background-color: var(--clr-main-text);
+    color: var(--clr-hover-text);
+}
+
+.list {
+    display: none;
+}
+
+#nav-list {
+    padding-bottom: 1.5rem;
+}
+
+
+.list-item {
+    text-align: right;
+    list-style: none;
+    padding: 0.5rem 0;
+}
+
+.nav-link {
+    text-decoration: none;
+}
+
+.nav-link:visited {
+    color: var(--clr-main-text);
+}
+
+.nav-link:hover {
+    font-weight: bold;
+}
+
+
+
+
+
+/* SECTION STYLES */
+.section {
+    padding: 1.5rem 1.5rem 6rem 1.5rem;
+}
+
+.about {
+    background-color: var(--clr-back);
+}
+
+.previous-work {
+    background-color: var(--clr-card-alt);
+    color: var(--clr-back-alt);
+}
+
+.projects {
+    background-color: var(--clr-back-alt);
+}
+
+.section-title {
+    font-size: 2.2rem;
+    padding: 2rem 0;
+}
+
+.main-text {
+    font-size: var(--fs-standard);
+}
+
+.img-card {
+    background-color: white;
+    border-radius: 10px;
+    margin: 3rem 0 0 0;
+
+}
+
+.img {
+    max-width: 100%; 
+    border-radius: 10px;
+    box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .2); 
+    backdrop-filter: blur(5px);
+}
+
+.img-title {
+    padding: 1.5rem;
+}
+
+.img-caption {
+    padding: 0 1.5rem 1.5rem 1.5rem;
+}
+
+
+/* FOOTER STYLES */
+
+.footer {
+    text-align: center;
+}
