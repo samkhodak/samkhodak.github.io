@@ -1,219 +1,234 @@
 :root {
-    --fs-standard: 1.3rem;
-    --fs-title: 3rem;
-    --clr-back: #ECEBF3;
-    --clr-card: #A0BAA3;
-    --clr-card-alt: #31493C;
-    --clr-back-alt: #D8E4FF;
-    --clr-accent: #3083DC;
-    --clr-main-text: black;
-    --clr-hover-text: white;
-    --clr-button: #767CC1;
-    /*https://coolors.co/d8e4ff-3083dc-a0baa3-31493c-ecebf3*/
+  --fs-standard: 1.3rem;
+  --fs-title: 3rem;
+  --clr-back: #ecebf3;
+  --clr-card: #a0baa3;
+  --clr-card-alt: #31493c;
+  --clr-back-alt: #d8e4ff;
+  --clr-accent: #3083dc;
+  --clr-main-text: black;
+  --clr-hover-text: white;
+  --clr-button: #767cc1;
+  /*https://coolors.co/d8e4ff-3083dc-a0baa3-31493c-ecebf3*/
 }
 
 * {
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
-    /* font-family: 'Roboto', sans-serif; */
-    font-family: 'IBM Plex Sans', sans-serif;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  /* font-family: 'Roboto', sans-serif; */
+  font-family: "IBM Plex Sans", sans-serif;
 }
 
-
 html {
-    scroll-padding-top: 3rem;
+  scroll-padding-top: 3rem;
 }
 
 body {
-    background-color: var(--clr-back);
-    font-weight: 400;
+  background-color: var(--clr-back);
+  font-weight: 400;
 }
-
-
-
 
 /* NAV STYLES */
-.nav {
-    background-color: var(--clr-back);
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-    padding: 0 1.5rem;
-    width: 100%;
-    box-shadow: 0 4px 4px -4px rgba(0,0,0,.3);  /*The rgba value is RGB but with an opacity value.*/
-}
-
-.top-row {
-    display: flex;
-    justify-content: space-between;
+.header {
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--clr-back);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  padding: 0 1.5rem;
+  width: 100%;
+  box-shadow: 0 4px 4px -4px rgba(0, 0, 0, 0.3); /*The rgba value is RGB but with an opacity value.*/
 }
 
 .logo {
-    text-decoration: none;
-    font-family: 'Bodoni Moda', serif;
-    font-size: 3rem;
-    padding: 0;
+  text-decoration: none;
+  font-family: "Bodoni Moda", serif;
+  font-size: 3rem;
+  padding: 0;
 }
 
 .logo:visited {
-    color: var(--clr-main-text);
+  color: var(--clr-main-text);
 }
 
 .hamburger {
-    background-color: var(--clr-back);
-    border: none;
-    width: 40px;
-    height: 40px;
-    margin-top: 1rem;
-    transition: 0.5s;
+  background-color: var(--clr-back);
+  border: none;
+  width: 40px;
+  height: 40px;
+  margin-top: 1rem;
+  transition: 0.5s;
 }
 
 .hamburger:hover {
-    background-color: var(--clr-main-text);
-    color: var(--clr-hover-text);
+  background-color: var(--clr-main-text);
+  color: var(--clr-hover-text);
 }
 
 .list {
-    display: none;
+  display: none;
 }
 
 #nav-list {
-    padding-bottom: 1.5rem;
 }
 
-
 .list-item {
-    text-align: right;
-    list-style: none;
-    padding: 0.5rem 0;
+  text-align: right;
+  list-style: none;
+  padding: 0.5rem 0;
 }
 
 .nav-link {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 .nav-link:visited {
-    color: var(--clr-main-text);
+  color: var(--clr-main-text);
 }
 
 .nav-link:hover {
-    font-weight: bold;
+  font-weight: bold;
 }
-
-
-
-
 
 /* SECTION STYLES */
 .section {
-    padding: 1.8rem 1.8rem 6rem 1.8rem;
+  padding: 1.8rem 1.8rem 6rem 1.8rem;
 }
 
-
 .about {
-    background-color: var(--clr-back);
+  background-color: var(--clr-back);
 }
 
 .hero-h1 {
-    font-size: clamp(8rem, 30vw, 20rem);
-    padding: 2rem 0 5rem 0;
+  font-size: clamp(8rem, 30vw, 20rem);
+  padding: 2rem 0 5rem 0;
 }
 
 .previous-work {
-    background-color: var(--clr-card-alt);
-    color: var(--clr-back-alt);
+  background-color: var(--clr-card-alt);
+  color: var(--clr-back-alt);
 }
 
 .h3 {
-    padding: 1.5rem 0;
-    font-size: 1.6rem;
+  padding: 1.5rem 0;
+  font-size: 1.6rem;
 }
 
 .divider {
-    margin: 3rem auto 2rem auto;
-    padding: .1rem;
-    width: 20%;
-    background-color: var(--clr-back-alt);
+  margin: 3rem auto 2rem auto;
+  padding: 0.1rem;
+  width: 20%;
+  background-color: var(--clr-back-alt);
 }
 
 .projects {
-    background-color: var(--clr-back-alt);
+  background-color: var(--clr-back-alt);
 }
 
 .section-title {
-    font-size: 2.6rem;
-    padding: 2rem 0;
+  font-size: 2.6rem;
+  padding: 2rem 0;
 }
 
 .main-text {
-    font-size: var(--fs-standard);
-    line-height: 2rem;
-    letter-spacing: 0.5px;
+  font-size: var(--fs-standard);
+  line-height: 2rem;
+  letter-spacing: 0.5px;
 }
 
 .img-card {
-    background-color: white;
-    border-radius: 10px;
-    margin: 3rem 0 0 0;
-    box-shadow: 0px 3px 15px rgba(0, 0, 0, .2);
-
+  max-width: 450px;
+  background-color: white;
+  border-radius: 10px;
+  margin: 3rem auto 0 auto;
+  box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
 }
 
 .img {
-    max-width: 100%; 
-    border-radius: 10px;
-    box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .2); 
-    backdrop-filter: blur(5px);
+  max-width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(5px);
 }
 
 .card-info {
-    padding: 1.5rem;
-    display: flex;
-    flex-flow: column wrap;
+  padding: 1.5rem;
+  display: flex;
+  flex-flow: column wrap;
 }
 
-
 .img-title {
-    font-size: 1.6rem;
-    padding: 1rem 0;
+  font-size: 1.6rem;
+  padding: 1rem 0;
 }
 
 .img-caption {
-    font-size: 1.2rem;
-    padding: 0 0 1.5rem 0;
+  font-size: 1.2rem;
+  padding: 0 0 1.5rem 0;
 }
 
 .git-btn {
-    padding: 0.8rem 1.5rem;
-    border-radius: 26px;
-    border: none;
-    background-color: #767CC1;
-    align-self: end;
-    color: white;
-    transition: 0.5s;
-   margin: 0.5rem;
+  padding: 0.8rem 1.5rem;
+  border-radius: 26px;
+  border: none;
+  background-color: #767cc1;
+  align-self: end;
+  color: white;
+  transition: 0.5s;
+  margin: 1rem;
 }
 
 .git-btn:hover {
-   background-color: var(--clr-back-alt); 
-   color: black;
+  background-color: var(--clr-back-alt);
+  color: black;
 }
 
 .git-link {
-    font-family: 'IBM Plex Sans', sans-serif;
-    font-weight: 700;
-    font-size: 1.5rem;
-    text-decoration: none;
+  font-family: "IBM Plex Sans", sans-serif;
+  font-weight: 700;
+  font-size: 1.5rem;
+  text-decoration: none;
 }
 
 .git-link:visited {
-    color: inherit;     /*This will inherit the color style from the parent's styles when visited.*/
+  color: white;
+  /* color: inherit; This will inherit the color style from the parent's styles when visited. */
 }
-
 
 /* FOOTER STYLES */
 
 .footer {
-    text-align: center;
+  text-align: center;
 }
+
+@media (min-width: 1024px) {
+  .header {
+    display: grid;
+    grid-template-columns: 2fr 8fr;
+  }
+
+  .hamburger {
+    display: none;
+  }
+
+  .list {
+    display: flex;
+    gap: 1rem;
+  }
+
+  .section-content {
+    width: 50%;
+    margin: auto;
+  }
+
+  .hero-h1 {
+    font-size: clamp(8rem, 20vw, 16rem);
+  }
+
+  #projects-content {
+    display: flex;
+  }
+
+} ;

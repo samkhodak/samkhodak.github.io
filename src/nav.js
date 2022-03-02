@@ -7,6 +7,7 @@ let nav_ul = document.getElementById('nav-list');
 //Hide/display the nav list when the hamburger is pressed.
 nav_button.addEventListener('click', () => {
     nav_ul.classList.toggle('list');
+    // nav_ul.setAttribute('id', 'nav-list');
 });
 
 //Once a link is selected, close the nav list.
