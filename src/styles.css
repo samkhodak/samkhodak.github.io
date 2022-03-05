@@ -16,7 +16,6 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0;
-  /* font-family: 'Roboto', sans-serif; */
   font-family: "IBM Plex Sans", sans-serif;
 }
 
@@ -31,15 +30,26 @@ body {
 
 /* NAV STYLES */
 .header {
-  display: flex;
-  justify-content: space-between;
-  background-color: var(--clr-back);
-  position: sticky;
-  top: 0;
+  /*
   z-index: 1000;
   padding: 0 1.5rem;
-  width: 100%;
+  width: 100%; */
   box-shadow: 0 4px 4px -4px rgba(0, 0, 0, 0.3); /*The rgba value is RGB but with an opacity value.*/
+  position: sticky;
+  top: 0;
+  background-color: var(--clr-back);
+}
+
+/* .top-row {
+  display: flex;
+  justify-content: space-between;
+} */
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1.5rem;
 }
 
 .logo {
@@ -47,6 +57,22 @@ body {
   font-family: "Bodoni Moda", serif;
   font-size: 3rem;
   padding: 0;
+}
+
+.nav-list {
+  position: fixed;
+  display: flex;
+  flex-flow: column wrap;
+  text-align: end;
+  left: -100%;
+  top: 5rem;
+  width: 90%;
+  background-color: #767cc1;
+  transition: 0.3s;
+}
+
+.nav-list.active {
+  left: 0;
 }
 
 .logo:visited {
@@ -58,7 +84,7 @@ body {
   border: none;
   width: 40px;
   height: 40px;
-  margin-top: 1rem;
+  /* margin-top: 1rem; */
   transition: 0.5s;
 }
 
@@ -67,15 +93,11 @@ body {
   color: var(--clr-hover-text);
 }
 
-.list {
+/* .list {
   display: none;
-}
-
-#nav-list {
-}
+} */
 
 .list-item {
-  text-align: right;
   list-style: none;
   padding: 0.5rem 0;
 }
@@ -205,17 +227,24 @@ body {
 
 @media (min-width: 1024px) {
   .header {
-    display: grid;
-    grid-template-columns: 2fr 8fr;
+    /* display: grid;
+    grid-template-columns: 2fr 8fr; */
   }
 
   .hamburger {
     display: none;
   }
 
-  .list {
+  /* .list {
     display: flex;
     gap: 1rem;
+  } */
+
+  .nav-list {
+    justify-content: space-between;
+    flex-flow: row wrap;
+    align-items: center;
+    gap: 30px;
   }
 
   .section-content {
@@ -230,5 +259,4 @@ body {
   #projects-content {
     display: flex;
   }
-
 } ;

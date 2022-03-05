@@ -14,9 +14,9 @@
   </head>
   <body>
     <header class="header">
-      <a href="#" class="logo">SK</a>
       <nav>
-        <ul id="nav-list" class="list list-move">
+        <a href="#" class="logo">SK</a>
+        <ul id="nav-list" class="nav-list">
           <li class="list-item">
             <a href="#" class="nav-link main-text">About</a>
           </li>
@@ -32,14 +32,14 @@
             <a href="#" class="nav-link main-text">Contact</a>
           </li>
         </ul>
+        <button
+          aria-label="Unfold main navigation list"
+          id="hamburger"
+          class="hamburger"
+        >
+          <i class="fa fa-bars fa-2x" aria-hidden="true"></i>
+        </button>
       </nav>
-      <button
-        aria-label="Unfold main navigation list"
-        id="hamburger"
-        class="hamburger"
-      >
-        <i class="fa fa-bars fa-2x" aria-hidden="true"></i>
-      </button>
     </header>
 
     <main>
@@ -55,7 +55,7 @@
           </p>
         </div>
       </section>
-      <section class="section previous-work">
+      <section id="previous-work" class="section previous-work">
         <div class="section-content">
           <h2 class="section-title">PREVIOUS WORK</h2>
           <h3 class="h3">Technical Course Support Specialist - PSU</h3>
@@ -72,7 +72,7 @@
           </p>
         </div>
       </section>
-      <section class="section projects">
+      <section id="projects" class="section projects">
         <div class="section-content">
           <h2 class="section-title">PROJECTS</h2>
         </div>
