@@ -1,7 +1,7 @@
 :root {
   --fs-standard: 1.3rem;
   --fs-title: 3rem;
-  --clr-back: #ecebf3;
+  --clr-back: white;
   --clr-card: #a0baa3;
   --clr-card-alt: #31493c;
   --clr-back-alt: #d8e4ff;
@@ -19,10 +19,6 @@
   font-family: "IBM Plex Sans", sans-serif;
 }
 
-html {
-  scroll-padding-top: 3rem;
-}
-
 body {
   background-color: var(--clr-back);
   font-weight: 400;
@@ -30,49 +26,44 @@ body {
 
 /* NAV STYLES */
 .header {
-  /*
-  z-index: 1000;
-  padding: 0 1.5rem;
-  width: 100%; */
   box-shadow: 0 4px 4px -4px rgba(0, 0, 0, 0.3); /*The rgba value is RGB but with an opacity value.*/
   position: sticky;
   top: 0;
+  height: 5rem;
   background-color: var(--clr-back);
 }
-
-/* .top-row {
-  display: flex;
-  justify-content: space-between;
-} */
 
 nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 1.5rem;
+  /* padding: 0 1.5rem; */
 }
 
 .logo {
   text-decoration: none;
   font-family: "Bodoni Moda", serif;
   font-size: 3rem;
-  padding: 0;
+  padding: 0.2rem 1.5rem;
 }
 
 .nav-list {
   position: fixed;
+  top: 5rem;
   display: flex;
   flex-flow: column wrap;
-  text-align: end;
-  left: -100%;
-  top: 5rem;
-  width: 90%;
-  background-color: #767cc1;
+  transform: scale(1, 0);
+  transform-origin: top;
   transition: 0.3s;
+  width: 100%;
+  padding: 0 2rem 2rem 2rem;
+  background-color: var(--clr-back);
+  text-align: end;
+  box-shadow: 0 4px 4px -4px rgba(0, 0, 0, 0.3);
 }
 
 .nav-list.active {
-  left: 0;
+  transform: scale(1, 1);
 }
 
 .logo:visited {
@@ -84,18 +75,14 @@ nav {
   border: none;
   width: 40px;
   height: 40px;
-  /* margin-top: 1rem; */
   transition: 0.5s;
+  margin: 0 1.2rem;
 }
 
 .hamburger:hover {
   background-color: var(--clr-main-text);
   color: var(--clr-hover-text);
 }
-
-/* .list {
-  display: none;
-} */
 
 .list-item {
   list-style: none;
@@ -111,7 +98,8 @@ nav {
 }
 
 .nav-link:hover {
-  font-weight: bold;
+  box-shadow: 0px 5px 0px 0px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.2s ease-in-out;
 }
 
 /* SECTION STYLES */
@@ -130,7 +118,7 @@ nav {
 
 .previous-work {
   background-color: var(--clr-card-alt);
-  color: var(--clr-back-alt);
+  color: var(--clr-back);
 }
 
 .h3 {
@@ -161,8 +149,8 @@ nav {
 }
 
 .img-card {
-  max-width: 450px;
-  background-color: white;
+  max-width: 600px;
+  background-color: var(--clr-back);
   border-radius: 10px;
   margin: 3rem auto 0 auto;
   box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
@@ -195,19 +183,20 @@ nav {
   padding: 0.8rem 1.5rem;
   border-radius: 26px;
   border: none;
-  background-color: #767cc1;
+  background-color: var(--clr-button);
   align-self: end;
-  color: white;
+  color: var(--clr-back);
   transition: 0.5s;
   margin: 1rem;
 }
 
 .git-btn:hover {
   background-color: var(--clr-back-alt);
-  color: black;
+  color: var(--clr-button);
 }
 
 .git-link {
+  color: inherit;
   font-family: "IBM Plex Sans", sans-serif;
   font-weight: 700;
   font-size: 1.5rem;
@@ -215,36 +204,37 @@ nav {
 }
 
 .git-link:visited {
-  color: white;
-  /* color: inherit; This will inherit the color style from the parent's styles when visited. */
+  color: inherit; /*This will inherit the color style from the parent's styles when visited.*/
 }
 
 /* FOOTER STYLES */
 
 .footer {
   text-align: center;
+  background-color: var(--clr-back);
 }
 
 @media (min-width: 1024px) {
   .header {
-    /* display: grid;
-    grid-template-columns: 2fr 8fr; */
+    position: static;
+    box-shadow: none;
   }
 
   .hamburger {
     display: none;
   }
 
-  /* .list {
-    display: flex;
-    gap: 1rem;
-  } */
-
   .nav-list {
-    justify-content: space-between;
+    position: static;
+    justify-content: flex-end;
     flex-flow: row wrap;
-    align-items: center;
-    gap: 30px;
+    background-color: inherit;
+    gap: 2.5rem;
+    padding: 0;
+    margin-right: 3rem;
+    box-shadow: none;
+    transition: none;
+    transform: none;
   }
 
   .section-content {
@@ -258,5 +248,14 @@ nav {
 
   #projects-content {
     display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    gap: 4rem;
+    margin-top: 2rem;
   }
-} ;
+
+  .img-card {
+    max-width: 450px;
+    margin: 0;
+  }
+};
