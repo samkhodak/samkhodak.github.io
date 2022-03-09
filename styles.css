@@ -17,6 +17,7 @@
   padding: 0;
   margin: 0;
   font-family: "IBM Plex Sans", sans-serif;
+  text-decoration: none;
 }
 
 body {
@@ -29,6 +30,7 @@ body {
   box-shadow: 0 4px 4px -4px rgba(0, 0, 0, 0.3); /*The rgba value is RGB but with an opacity value.*/
   position: sticky;
   top: 0;
+  z-index: 1000;
   height: 5rem;
   background-color: var(--clr-back);
 }
@@ -37,16 +39,22 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  /* padding: 0 1.5rem; */
 }
 
 .logo {
-  color: inherit;
   text-decoration: none;
+  background-color: inherit;
+  color: inherit;
   font-family: "Bodoni Moda", serif;
   font-size: 3rem;
   padding: 0.2rem 1.5rem;
 }
+
+.link {
+  text-decoration: none;
+  cursor: default;
+}
+
 
 .nav-list {
   position: fixed;
@@ -91,7 +99,6 @@ nav {
 }
 
 .nav-link {
-  text-decoration: none;
   color: inherit;
 }
 
@@ -202,7 +209,6 @@ nav {
   font-family: "IBM Plex Sans", sans-serif;
   font-weight: 700;
   font-size: 1.5rem;
-  text-decoration: none;
 }
 
 .git-link:visited {
@@ -214,6 +220,37 @@ nav {
 .footer {
   text-align: center;
   background-color: var(--clr-back);
+  padding: 1rem;
+}
+
+.contact-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  padding: 2rem 0;
+}
+
+.contact-btn {
+  border: none;
+  border-radius: 50%;
+  background-color: #373F43;
+  color: var(--clr-back);
+  transition: 0.3s;
+}
+
+.contact-btn:hover {
+  background-color: var(--clr-button);
+}
+
+.btn-link {
+  width: 90px; 
+  padding: 1.6rem;
+  color: inherit;
+}
+
+.copyright {
+  font-size: 1.5rem;
+  padding: 1rem 0 2rem 0;
 }
 
 @media (min-width: 1024px) {

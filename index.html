@@ -9,27 +9,30 @@
       href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,wght@1,600&family=IBM+Plex+Sans:wght@300;400;500;700&family=Roboto:wght@300;400;700&display=swap"
       rel="stylesheet"
     />
-    <script src="https://use.fontawesome.com/8ed627da4c.js"></script>
+    <script
+      src="https://kit.fontawesome.com/d5bbca82b7.js"
+      crossorigin="anonymous"
+    ></script>
     <title>landing-page</title>
   </head>
   <body>
     <header class="header">
       <nav>
-        <a href="#" class="logo">SK</a>
+        <a href="#" class="link logo">SK</a>
         <ul id="nav-list" class="nav-list">
           <li class="list-item">
-            <a href="#" class="nav-link main-text">About</a>
+            <a href="#" class="link nav-link main-text">About</a>
           </li>
           <li class="list-item">
-            <a href="#previous-work" class="nav-link main-text"
+            <a href="#previous-work" class="link nav-link main-text"
               >Previous Work</a
             >
           </li>
           <li class="list-item">
-            <a href="#projects" class="nav-link main-text">Projects</a>
+            <a href="#projects" class="link nav-link main-text">Projects</a>
           </li>
           <li class="list-item">
-            <a href="#" class="nav-link main-text">Contact</a>
+            <a href="#" class="link nav-link main-text">Contact</a>
           </li>
         </ul>
         <button
@@ -90,7 +93,7 @@
               </p>
               <button class="git-btn">
                 <a
-                  class="git-link"
+                  class="link git-link"
                   href="https://github.com/samkhodak/Pomodoro-Timer"
                   target="_blank"
                   >github</a
@@ -112,7 +115,7 @@
               </p>
               <button class="git-btn">
                 <a
-                  class="git-link"
+                  class="link git-link"
                   href="https://github.com/samkhodak/algorithms-exercises"
                   target="_blank"
                   >github</a
@@ -124,8 +127,30 @@
       </section>
     </main>
 
-    <footer class="footer section">
-      <p class="main-text">© Samuel Khodak</p>
+    <footer class="footer">
+      <div class="contact-buttons">
+        <button
+          aria-label="contact link button for github."
+          class="contact-btn"
+        >
+          <a
+            class="link btn-link fa-brands fa-github fa-3x"
+            href="https://github.com/samkhodak"
+            target="_blank"
+          ></a>
+        </button>
+        <button
+          aria-label="contact link button for linkedin."
+          class="contact-btn"
+        >
+          <a
+            class="link btn-link fa-brands fa-linkedin-in fa-3x"
+            href="https://www.linkedin.com/in/sam-khodakovskiy-8162671b9/"
+            target="_blank"
+          ></a>
+        </button>
+      </div>
+      <small class="copyright">&copy; Samuel Khodak 2022</small>
     </footer>
     <script src="nav.js"></script>
   </body>
