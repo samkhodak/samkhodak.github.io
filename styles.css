@@ -115,7 +115,10 @@ body {
   transition: box-shadow 0.2s ease-in-out;
 }
 
+
+
 /* SECTION STYLES */
+
 .section {
   padding: 1.8rem 1.8rem 6rem 1.8rem;
 }
@@ -194,7 +197,7 @@ body {
 
 .git-btn {
   padding: 0.8rem 1.5rem;
-  border-radius: 26px;
+  border-radius: 50px;
   border: none;
   background-color: var(--clr-button);
   align-self: end;
@@ -218,6 +221,68 @@ body {
 .git-link:visited {
   color: inherit; /*This will inherit the color style from the parent's styles when visited.*/
 }
+
+
+.form-group {
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+.form-element {
+  display: flex;
+  flex-flow: column nowrap;
+  margin: 1rem 0;
+}
+
+.label {
+  font-size: 1.2rem;
+  padding: 0.5rem 0 0.5rem 0.7rem;
+}
+
+.input {
+  padding: 1rem 0.7rem;
+  font-size: 1.4rem;
+  border: none;
+  border-bottom: 2px solid rgba(0,0,0,0.1);
+}
+
+.input:focus, .input:active {
+  outline: none;
+  border-bottom: 2px solid var(--clr-button);
+}
+
+.textbox {
+  height: 8rem;
+}
+
+.form-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 3%;
+  width: 100%;
+  padding: 2rem 0;
+}
+
+.form-btn {
+  padding: 1rem 1.5rem;
+  width: 48%;
+  border: none;
+  border-radius: 50px;
+  font-weight: 700;
+  font-size: 1.5rem;
+  background-color: var(--clr-button);
+  color: var(--clr-back);
+  transition: .3s;
+}
+
+.form-btn:hover {
+  background-color: var(--clr-back-alt);
+  color: var(--clr-button);
+}
+
+
+
+
 
 /* FOOTER STYLES */
 
@@ -258,6 +323,11 @@ body {
 }
 
 @media (min-width: 1024px) {
+
+  html {
+    scroll-padding-top: 0;
+  }
+
   .header {
     position: static;
     box-shadow: none;

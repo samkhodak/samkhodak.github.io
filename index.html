@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <link rel="stylesheet" href="styles.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,wght@1,600&family=IBM+Plex+Sans:wght@300;400;500;700&family=Roboto:wght@300;400;700&display=swap"
@@ -15,10 +16,12 @@
     ></script>
     <title>landing-page</title>
   </head>
+
   <body>
     <header class="header">
       <nav class="nav">
         <a href="#" class="link logo">SK</a>
+
         <ul id="nav-list" class="nav-list">
           <li class="list-item">
             <a href="#" class="link nav-link main-text">About</a>
@@ -32,9 +35,10 @@
             <a href="#projects" class="link nav-link main-text">Projects</a>
           </li>
           <li class="list-item">
-            <a href="#" class="link nav-link main-text">Contact</a>
+            <a href="#contact" class="link nav-link main-text">Contact</a>
           </li>
         </ul>
+
         <button
           aria-label="Unfold main navigation list"
           id="hamburger"
@@ -44,6 +48,8 @@
         </button>
       </nav>
     </header>
+
+    <!-- <div id="head-placeholder"></div> -->
 
     <main>
       <section class="section about">
@@ -58,6 +64,7 @@
           </p>
         </div>
       </section>
+
       <section id="previous-work" class="section previous-work">
         <div class="section-content">
           <h2 class="section-title">PREVIOUS WORK</h2>
@@ -75,6 +82,7 @@
           </p>
         </div>
       </section>
+
       <section id="projects" class="section projects">
         <div class="section-content">
           <h2 class="section-title">PROJECTS</h2>
@@ -123,6 +131,45 @@
               </button>
             </div>
           </div>
+        </div>
+      </section>
+
+      <section id="contact" class="section contact">
+        <div class="section-content">
+          <form action="" class="form">
+            <h2 class="section-title">CONTACT ME</h2>
+
+            <div class="form-group">
+              <div class="form-element">
+                <label class="label" for="name">Name</label>
+                <input class="input" id="name" type="text" name="name" placeholder="your name here"/>
+              </div>
+
+              <div class="form-element">
+                <label class="label" for="email">Email</label>
+                <input class="input" id="email" type="email" name="email" placeholder="email@domain.com"/>
+              </div>
+            </div>
+
+            <div class="form-element">
+              <label class="label" for="message">Message</label>
+              <textarea
+                class="input textbox"
+                id="message"
+                name="message"
+                placeholder = "enter your message"
+              ></textarea>
+            </div>
+
+            <div class="form-buttons">
+              <button class="form-btn" type="submit" value="Submit">
+                submit
+              </button>
+              <button class="form-btn" type="reset" value="Reset">
+                reset
+              </button>
+            </div>
+          </form>
         </div>
       </section>
     </main>
