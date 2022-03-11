@@ -9,6 +9,7 @@
   --clr-main-text: black;
   --clr-hover-text: white;
   --clr-button: #767cc1;
+  --clr-gray: dimgray;
   /*https://coolors.co/d8e4ff-3083dc-a0baa3-31493c-ecebf3*/
 }
 
@@ -155,7 +156,7 @@ body {
 
 .section-title {
   font-size: 2.6rem;
-  padding: 2rem 0;
+  padding: 3rem 0 4rem 0;
 }
 
 .main-text {
@@ -251,6 +252,10 @@ body {
   border-bottom: 2px solid var(--clr-button);
 }
 
+.input:focus::placeholder {
+  color: transparent;
+}
+
 .textbox {
   height: 8rem;
 }
@@ -287,21 +292,23 @@ body {
 /* FOOTER STYLES */
 
 .footer {
-  text-align: center;
+  display: flex;
+  justify-content: flex-end;
+  gap: 2rem;
+  align-items: flex-end;
   background-color: var(--clr-back);
-  padding: 1rem;
+  padding: 2rem;
 }
 
 .contact-buttons {
   display: flex;
-  justify-content: center;
-  gap: 1.5rem;
-  padding: 2rem 0;
+  justify-content: flex-end;
+  gap: 0.8rem;
 }
 
 .contact-btn {
   border: none;
-  border-radius: 50%;
+  border-radius: 20px;
   background-color: #373F43;
   color: var(--clr-back);
   transition: 0.3s;
@@ -312,15 +319,20 @@ body {
 }
 
 .btn-link {
-  width: 90px; 
-  padding: 1.6rem;
+  width: 4rem; 
+  padding: 0.8rem;
   color: inherit;
 }
 
 .copyright {
-  font-size: 1.5rem;
-  padding: 1rem 0 2rem 0;
+  font-size: 1rem;
+  color: var(--clr-gray);
 }
+
+
+
+
+
 
 @media (min-width: 1024px) {
 
@@ -370,5 +382,9 @@ body {
   .img-card {
     max-width: 450px;
     margin: 0;
+  }
+
+  .copyright {
+    font-size: var(--fs-standard);
   }
 };
