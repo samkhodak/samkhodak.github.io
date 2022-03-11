@@ -343,6 +343,7 @@ body {
   .header {
     position: static;
     box-shadow: none;
+    padding: 1rem;
   }
 
   .hamburger {
