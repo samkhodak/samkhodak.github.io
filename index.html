@@ -4,7 +4,6 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <link rel="stylesheet" href="styles.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,wght@1,600&family=IBM+Plex+Sans:wght@300;400;500;700&family=Roboto:wght@300;400;700&display=swap"
@@ -14,7 +13,12 @@
       src="https://kit.fontawesome.com/d5bbca82b7.js"
       crossorigin="anonymous"
     ></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <title>Sam Khodak</title>
+    <meta
+      name="description"
+      content="Sam Khodak is a computer science student aspiring towards a full-stack software engineering career."
+    />
   </head>
 
   <body>
@@ -49,8 +53,6 @@
       </nav>
     </header>
 
-    <!-- <div id="head-placeholder"></div> -->
-
     <main>
       <section class="section about">
         <div class="section-content about-hero">
@@ -59,6 +61,7 @@
             alt="An image of Sam Khodak in black and white"
             class="hero-img"
           />
+
           <div class="hero-text">
             <h1 class="hero-h1">my name is</h1>
             <h2 class="hero-h2">Sam Khodak</h2>
@@ -76,14 +79,17 @@
       <section id="previous-work" class="section previous-work">
         <div class="section-content">
           <h2 class="section-title">PREVIOUS WORK</h2>
-          <h3 class="h3">Technical Course Support Specialist - PSU</h3>
+
+          <h3 class="work-title">Technical Course Support Specialist - PSU</h3>
           <p class="main-text">
             As a TCSS, I help students understand programming concepts in three
             computer science courses. I also assist students with proficiency in
             their homework assignments and proctor coding demonstrations.
           </p>
+
           <div class="divider"></div>
-          <h3 class="h3">Cashier - Home Depot</h3>
+
+          <h3 class="work-title">Cashier - Home Depot</h3>
           <p class="main-text">
             I worked as a main-line cashier and provided quality customer
             service for shoppers.
@@ -95,7 +101,8 @@
         <div class="section-content">
           <h2 class="section-title">PROJECTS</h2>
         </div>
-        <div id="projects-content">
+
+        <div class="projects-content">
           <div class="img-card">
             <img
               src="images/Pomodoro Timer.png"
@@ -117,6 +124,7 @@
               </button>
             </div>
           </div>
+
           <div class="img-card">
             <img
               src="images/Minimum Sum Code.png"
@@ -142,16 +150,16 @@
         </div>
       </section>
 
-      <section id="contact" class="section contact">
+      <section id="contact" class="section">
         <div class="section-content">
-          <form action="" class="form">
+          <form action="">
             <h2 class="section-title">CONTACT ME</h2>
 
             <div class="form-group">
               <div class="form-element">
-                <label class="label" for="name">Name</label>
+                <label class="form-label" for="name">Name</label>
                 <input
-                  class="input"
+                  class="form-input"
                   id="name"
                   type="text"
                   name="name"
@@ -161,9 +169,9 @@
               </div>
 
               <div class="form-element">
-                <label class="label" for="email">Email</label>
+                <label class="form-label" for="email">Email</label>
                 <input
-                  class="input"
+                  class="form-input"
                   id="email"
                   type="email"
                   name="email"
@@ -174,9 +182,9 @@
             </div>
 
             <div class="form-element">
-              <label class="label" for="message">Message</label>
+              <label class="form-label" for="message">Message</label>
               <textarea
-                class="input textbox"
+                class="form-input form-textbox"
                 id="message"
                 name="message"
                 placeholder="enter your message"
@@ -198,23 +206,23 @@
     <footer class="footer">
       <small class="copyright">&copy; Samuel Khodak 2022</small>
 
-      <div class="contact-buttons">
+      <div class="info-buttons">
         <button
           aria-label="contact link button for github."
-          class="contact-btn"
+          class="info-btn"
         >
           <a
-            class="link btn-link fa-brands fa-github fa-2x"
+            class="link info-btn-link fa-brands fa-github fa-2x"
             href="https://github.com/samkhodak"
             target="_blank"
           ></a>
         </button>
         <button
           aria-label="contact link button for linkedin."
-          class="contact-btn"
+          class="info-btn"
         >
           <a
-            class="link btn-link fa-brands fa-linkedin-in fa-2x"
+            class="link info-btn-link fa-brands fa-linkedin-in fa-2x"
             href="https://www.linkedin.com/in/sam-khodakovskiy-8162671b9/"
             target="_blank"
           ></a>
