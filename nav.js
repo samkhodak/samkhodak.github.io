@@ -1,7 +1,7 @@
 //display list when button is clicked
 
-var nav_button = document.getElementById("hamburger");
-var nav_ul = document.getElementById("nav-list");
+const nav_button = document.getElementById("hamburger");
+const nav_ul = document.getElementById("nav-list");
 
 nav_button.addEventListener("click", () => {
   nav_ul.classList.toggle("active");
