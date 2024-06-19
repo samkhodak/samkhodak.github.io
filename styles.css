@@ -88,6 +88,10 @@ body {
   padding: 0.5rem 0;
 }
 
+.resume-link {
+    font-weight:600
+}
+
 .nav-link {
   color: inherit;
 }
