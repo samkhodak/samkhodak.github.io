@@ -390,12 +390,20 @@ body {
     flex-flow: row wrap;
     justify-content: center;
     gap: 4rem;
-    margin-top: 2rem;
+    margin: 2rem auto 0 auto;
+    max-width: 100rem;
   }
 
   .img-card {
     max-width: 450px;
     margin: 0;
+    align-self: stretch;
+  }
+
+  .card-info {
+    max-height: 305px;
+    height: 100%;
+    justify-content: space-between;
   }
 
   .copyright {
