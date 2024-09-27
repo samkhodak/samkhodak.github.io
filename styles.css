@@ -1,6 +1,7 @@
 :root {
   --fs-standard: 1.3rem;
   --fs-title: 3rem;
+  --fs-medium: 1.1rem;
   --clr-back: white;
   --clr-card: #a0baa3;
   --clr-card-alt: #31493c;
@@ -311,26 +312,29 @@ body {
 
 .footer {
   display: flex;
-  justify-content: flex-end;
+  justify-content: flex-start;
   gap: 2rem;
-  align-items: flex-end;
   background-color: var(--clr-back);
   padding: 2rem;
 }
 
 .copyright {
-  font-size: 1rem;
+  font-size: var(--fs-medium);
   color: var(--clr-gray);
+  /* margin: auto; */
 }
 
 .info-buttons {
+  position: fixed;
+  right: 1rem;
+  bottom: 1rem;
   display: flex;
   justify-content: flex-end;
   gap: 0.8rem;
 }
 
 .info-btn {
-  border: none;
+  border: 1px solid white;
   border-radius: 20px;
   background-color: var(--clr-button-alt);
   color: var(--clr-back);
@@ -412,6 +416,7 @@ body {
 
   .copyright {
     font-size: var(--fs-standard);
+    margin: 1rem auto;
   }
 }
 
