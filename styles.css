@@ -226,7 +226,7 @@ body {
   background-color: var(--clr-button);
   align-self: end;
   color: var(--clr-back);
-  transition: 0.5s;
+  transition: 0.2s ease-out;
   margin: 1rem;
 }
 
@@ -267,6 +267,7 @@ body {
   font-size: 1.4rem;
   border: none;
   border-bottom: 2px solid rgba(0, 0, 0, 0.1);
+  transition: all .2s ease-out;
 }
 
 .form-input:focus,
@@ -338,7 +339,7 @@ body {
   border-radius: 20px;
   background-color: var(--clr-button-alt);
   color: var(--clr-back);
-  transition: 0.3s;
+  transition: 0.2s ease-out;
 }
 
 .info-btn:hover {
